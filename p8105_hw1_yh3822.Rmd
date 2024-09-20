@@ -1,0 +1,18 @@
+---
+title: "p8105_hw1_yh3822"
+output: github_document
+date: "2024-09-19"
+---
+
+```{r setup}
+library(palmerpenguins)
+library(ggplot2)
+library(tidyverse)
+```
+
+
+
+
+
+
+
