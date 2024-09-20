@@ -61,4 +61,14 @@ The random sample works, and logical vector works with a warning. Both character
 
 
 
+```{r, eval=FALSE}
+logical_vector = as.numeric(sample_df$logical_vector)
+character_vector = as.numeric(sample_df$character_vector)
+factor_vector = as.numeric(sample_df$factor_vector)
+logical_vector
+character_vector 
+factor_vector
+```
+After using the as.numeric function, for logical vector, the TRUE turns into 1, and the FALSE turns into 0, so we can calculate the mean. For character vector, it results in NA because characters cannot be converted to numbers. For factor vector, it converts level1 to 1, level2 to 2, and level3 to 3 since they are converted to numbers. This does help explain why the mean of these vectors doesn't work because they are not numbers.
+
 
