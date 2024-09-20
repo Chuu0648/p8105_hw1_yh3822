@@ -51,6 +51,13 @@ sample_df = data_frame(random_sample, logical_vector, character_vector, factor_v
 sample_df
 ```
 
+```{r}
+mean(sample_df %>% pull(random_sample))
+mean(sample_df %>% pull(logical_vector))
+mean(sample_df %>% pull(character_vector))
+mean(sample_df %>% pull(factor_vector))
+```
+The random sample works, and logical vector works with a warning. Both character vector, and factor vector do not work.
 
 
 
