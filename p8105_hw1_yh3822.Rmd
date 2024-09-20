@@ -19,7 +19,15 @@ data("penguins", package = "palmerpenguins")
 penguins_df = penguins
 ```
 
+```{r}
+skimr::skim(penguins_df)
+```
 
+
+
+This dataset has `r nrow(penguins_df)` rows and `r ncol(penguins_df)` columns, which means there are totally `r nrow(penguins_df)` subjects and `r ncol(penguins_df)` variable names, including species, island, bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, sex and year. There are also some missing values in sex, bill_length_mm, bill_depth_mm, flipper_length_mm, and body_mass_g.
+
+The mean of flipper_length is `r mean(penguins_df$flipper_length_mm, na.rm = TRUE)`.
 
 
 
