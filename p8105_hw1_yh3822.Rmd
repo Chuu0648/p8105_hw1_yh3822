@@ -11,6 +11,14 @@ library(tidyverse)
 ```
 
 
+## Problem 1
+
+
+```{r}
+data("penguins", package = "palmerpenguins")
+penguins_df = penguins
+```
+
 
 
 
